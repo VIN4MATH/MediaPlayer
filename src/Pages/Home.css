@@ -1,0 +1,83 @@
+.card-section {
+    display: flex;
+    width: 1000px;
+    flex-flow: row wrap;
+    padding: 10px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    left: 250px;
+    top: 50px;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.card-items {
+    padding: 0px;
+    margin: 10px;
+    background: #f5af09;
+    color: #011627;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid #011627;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-btns {
+    background-color: #011627;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    position: relative;
+    top: 80px;
+}
+
+.card-btns p {
+    color: #eaecef;
+}
+
+.video-section {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Like-Button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0px;
+    height: 30px;
+    display: inline-block;
+    width: 40px;
+    position: relative;
+    top: 32px;
+    background: none;
+    color: #ececef;
+    font-size: 15px;
+}
+
+.Dislike-Button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0px;
+    height: 30px;
+    display: inline-block;
+    width: 40px;
+    position: relative;
+    top: 32px;
+    background: none;
+    color: #ececef;
+    font-size: 15px;
+}

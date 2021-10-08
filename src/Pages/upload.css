@@ -1,0 +1,77 @@
+.Upload-page {
+    display: inline-block;
+    width: 1000px;
+    padding: 10px;
+    position: relative;
+    left: 300px;
+    top: 50px;
+}
+
+.Upload-video {
+    height: 150px;
+    display: inline-block;
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+
+.Upload-btn {
+    height: 60px;
+    width: 250px;
+    background-color: #f5af09;
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    color: #011627;
+    left: 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.Upload-btn svg{
+    font-weight: bolder;
+}
+
+
+.View-btn button{
+    color: #011627;
+    border-radius: 6px;
+    background: #f5af09;
+    height: 60px;
+    width: 250px;
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    right: 300px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline:none;
+    padding: 0px;
+    margin:0px;
+    border:0px;
+    
+}
+
+
+/* label{
+    color:white;
+} */
+
+input[type="file"] {
+    display: none;
+}
+
+.Upload-data {
+    height: 150px;
+    display: inline-block;
+    width: -webkit-fill-available;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+}
