@@ -1,26 +1,28 @@
-import { BiLike } from "react-icons/bi";
-import { BiDislike } from "react-icons/bi";
-import React, { useState, useEffect } from "react";
-import "./Home.css";
-import Header from "../Component/Header/Header";
-import VideoCard from "../Component/VideoCard/VideoCard";
 
-const Home = (props) => {
+import React, { useState, useEffect } from 'react';
+import './Home.css';
+import Header from '../Component/Header/Header';
+import VideoCard from '../Component/VideoCard/VideoCard';
+
+const Home = () => {
   const [data, setData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState("");
-  console.log("Search state data", searchResults);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState('');
+  console.log('Search state data', searchResults);
 
   
   const searchHandler = (searchTerm) => {
     setSearchTerm(searchTerm);
-    if (searchTerm !== "") {
+    if (searchTerm !== '') {
       const newDataList = data.filter((users) => {
         return Object.values(users)
-          .join(" ")
+          .join(' ')
           .toLowerCase()
           .includes(searchTerm.toLowerCase());
       });
+
+
+      
       setSearchResults(newDataList);
       // console.log("vvv:", newDataList);
     } else {
@@ -29,7 +31,7 @@ const Home = (props) => {
   };
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then((resp) => resp.json())
       .then((data) => {
         // console.log("Data:",data)

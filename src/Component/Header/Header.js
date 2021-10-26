@@ -1,10 +1,10 @@
-import React, { useRef } from 'react'
+import React  from 'react';
 import Sidebar from '../Sidebar/Sidebar';
-import "./Header.css";
+import './Header.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
 import { useState } from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 function Header({ searchKeyword, term, isShowInput}) {
 
@@ -24,7 +24,7 @@ function Header({ searchKeyword, term, isShowInput}) {
             <div className="Header-left">
 
                 <GiHamburgerMenu className="H-menu" onClick={() => {
-                    setShowNav(!showNav)
+                    setShowNav(!showNav);
                 }} />
 
             </div>
@@ -45,14 +45,14 @@ function Header({ searchKeyword, term, isShowInput}) {
                 <Sidebar show={showNav} />
             </div>
         </div>
-    )
+    );
 }
 export default Header;
 
 Header.defaultProps = {
     isShowInput: false
-}
+};
 
 Header.propTypes = {
     isShowInput: PropTypes.bool
-}
+};

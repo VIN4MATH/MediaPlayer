@@ -1,28 +1,30 @@
-import React from "react";
+import React from 'react';
 import { BsCloudUpload } from 'react-icons/bs';
 import { GrFormView } from 'react-icons/gr';
-import Header from "../Component/Header/Header"
-import "./upload.css";
+import Header from '../Component/Header/Header';
+import './upload.css';
 
 class Upload extends React.Component {
     constructor() {
         super();
         this.state = {
-            video: "",
 
-            newVideo: ""
+            
+            video: '',
+
+            newVideo: ''
 
 
-        }
-        console.log("state:", this.state);
+        };
+        console.log('state:', this.state);
     }
 
     uploadedVideos() {
         this.setState({
             newvideo: this.state.video,
 
-        })
-        console.log("updatedState:", this.setState);
+        });
+        console.log('updatedState:', this.setState);
 
     }
 
@@ -40,17 +42,17 @@ class Upload extends React.Component {
                     <div className="Upload-video">
                         <div className="Upload-btn" >
 
-                            <label for="file" >
+                            <label htmlFor="file" >
                                 <i><BsCloudUpload /></i> To Upload
                             </label>
                             <input type="file" id="file" name="videos" placeholder="Upload Video"
-                                onChange={(e) => { this.setState({ video: e.target.value }) }} />
+                                onChange={(e) => { this.setState({ video: e.target.value }); }} />
                         </div>
                      
 
                         <div className="View-btn">
 
-                            <button onClick={() => { this.uploadedVideos() }}>
+                            <button onClick={() => { this.uploadedVideos(); }}>
                                 <i><GrFormView /></i> To View Uploads
                             </button>
 
@@ -71,7 +73,7 @@ class Upload extends React.Component {
 
             </div>
 
-        )
+        );
     }
 }
 

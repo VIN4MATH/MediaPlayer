@@ -1,5 +1,5 @@
-import "./About.css";
-import Header from "../Component/Header/Header";
+import './About.css';
+import Header from '../Component/Header/Header';
 
 
 const About = () => {
@@ -13,6 +13,9 @@ const About = () => {
 
         </div>
 
-    )
-}
+
+
+
+    );
+};
 export default About;
