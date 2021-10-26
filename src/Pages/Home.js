@@ -1,22 +1,13 @@
-
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import Header from '../Component/Header/Header';
 import VideoCard from '../Component/VideoCard/VideoCard';
 
 const Home = () => {
-
-  
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState('');
   console.log('Search state data', searchResults);
-
-
-
-  
-
-
 
   const searchHandler = (searchTerm) => {
     setSearchTerm(searchTerm);
@@ -27,8 +18,6 @@ const Home = () => {
           .toLowerCase()
           .includes(searchTerm.toLowerCase());
       });
-
-
 
       setSearchResults(newDataList);
       // console.log("vvv:", newDataList);
