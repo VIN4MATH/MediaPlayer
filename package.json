@@ -51,6 +51,6 @@
     "prettier-eslint": "^13.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.js": ["eslint --cache --fix","prettier --write"]
   }
 }

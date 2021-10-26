@@ -1,19 +1,8 @@
-import Home from './Pages/Home';
+import Home from "./Pages/Home";
 
-
-
-import Upload from './Pages/Upload';
-import About from './Pages/About';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-
-
-
-
-
-
-
-
+import Upload from "./Pages/Upload";
+import About from "./Pages/About";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
