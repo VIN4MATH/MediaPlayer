@@ -1,6 +1,6 @@
 
 // import './App.css';
-import Header from "./Component/Header Component/Header";
+import Header from "./Component/Header/Header"
 import Home from "./Pages/Home";
 import Upload from "./Pages/Upload";
 import About from "./Pages/About"

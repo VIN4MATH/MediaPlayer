@@ -1,5 +1,5 @@
 import "./About.css";
-import Header from "../Component/Header Component/Header";
+import Header from "../Component/Header/Header";
 
 
 const About = () => {

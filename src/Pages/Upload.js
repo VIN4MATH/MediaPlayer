@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { BsCloudUpload } from 'react-icons/bs';
 import { GrFormView } from 'react-icons/gr';
-import Header from "../Component/Header Component/Header"
+import Header from "../Component/Header/Header"
 import "./upload.css";
 
 class Upload extends React.Component {
