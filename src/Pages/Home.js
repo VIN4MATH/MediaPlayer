@@ -5,6 +5,8 @@ import Header from '../Component/Header/Header';
 import VideoCard from '../Component/VideoCard/VideoCard';
 
 const Home = () => {
+
+  
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState('');
@@ -13,7 +15,9 @@ const Home = () => {
 
 
   
-  
+
+
+
   const searchHandler = (searchTerm) => {
     setSearchTerm(searchTerm);
     if (searchTerm !== '') {
@@ -25,7 +29,7 @@ const Home = () => {
       });
 
 
-      
+
       setSearchResults(newDataList);
       // console.log("vvv:", newDataList);
     } else {
