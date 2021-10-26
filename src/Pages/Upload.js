@@ -10,6 +10,8 @@ class Upload extends React.Component {
         this.state = {
 
             
+
+            
             video: '',
 
             newVideo: ''

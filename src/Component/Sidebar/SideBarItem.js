@@ -10,6 +10,9 @@ const SideBarItem = ({ name, link, icon }) => {
 
 
     
+
+
+    
 };
 
 export default SideBarItem;

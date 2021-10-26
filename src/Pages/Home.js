@@ -10,6 +10,9 @@ const Home = () => {
   const [searchResults, setSearchResults] = useState('');
   console.log('Search state data', searchResults);
 
+
+
+  
   
   const searchHandler = (searchTerm) => {
     setSearchTerm(searchTerm);

@@ -13,6 +13,8 @@ const sideBarItems = [
 ];
 
 const Sidebar = ({ show }) => {
+
+    
     return (
         <div className={show ? 'sidenav active' : 'sidenav'}>
             <ul className="">
